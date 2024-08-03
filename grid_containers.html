@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Containers</title>
+    
+    <!-- Link to Bootstrap CSS for styling -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Link to custom CSS for additional styling -->
+    <link rel="stylesheet" href="styless.css">
+    <!-- Script for Bootstrap functionality (bundle includes Popper) -->
     <script src="js/bootstrap.bundle.js"></script>
+    <!-- Script for Font Awesome icons -->
     <script src="https://kit.fontawesome.com/8417eae1fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <img src="photos/network_switch.avif" class="img-fluid" alt="network swithces">
-            <h1><p class="text-center">Center aligned text on all viewport sizes.</p></h1>
-        </header>
-    </div>
+    <!-- Header section of the webpage -->
+    <header class="header">
+        <!-- Main heading centered on all viewport sizes -->
+        <h1>Center aligned text on all viewport sizes.</h1>
+    </header>
 
-
+    <!-- Main container for the webpage content, centered and with margin at the top -->
     <div class="container text-center mt-5">
         <div class="row">
+            <!-- Column for Laptop Repair service -->
             <div class="col-md-4 mb-4">
                 <h2>Laptop Repair</h2>
+                <!-- Font Awesome icon for Laptop Repair -->
                 <i class="fas fa-laptop-code"></i>
                 <p>
                     In this column, here is where the paragraph
@@ -32,8 +39,10 @@
                 </p>
             </div>
 
+            <!-- Column for Audio Installation service -->
             <div class="col-md-4 mb-4">
                 <h2>Audio Installation</h2>
+                <!-- Font Awesome icon for Audio Installation -->
                 <i class="fas fa-headphones-alt"></i>
                 <p>
                     In this column, the company advertises their
@@ -44,8 +53,10 @@
                 </p>
             </div>
 
+            <!-- Column for Drywall Repair service -->
             <div class="col-md-4 mb-4">
                 <h2>Drywall Repair</h2>
+                <!-- Font Awesome icon for Drywall Repair -->
                 <i class="fas fa-tools"></i>
                 <p>
                     Here the company can advertise about their
@@ -56,6 +67,68 @@
                 </p>
             </div>
         </div>
+
+        <div class="row mt-5">
+            <!-- Column for About Us section -->
+            <div class="col-md-8 mb-4">
+                <h2>About Us</h2>
+                <p>At Tech Solutions, we are committed to providing top-notch technology 
+                    services. With years of experience in the industry, we specialize in 
+                    computer assembly, home network installations, and phone repairs. Our 
+                    team of experts is dedicated to ensuring that you receive the best 
+                    service and support for all your tech needs.</p>
+            </div>
+            <!-- Column for Our Mission section -->
+            <div class="col-md-4 mb-4">
+                <h2>Our Mission</h2>
+                <p>Our mission is to deliver reliable and efficient tech solutions to our clients. 
+                    We strive to meet the unique needs of each customer, offering personalized services 
+                    and expert advice. Whether you need a custom-built computer, professional network 
+                    setup, or fast phone repair, Tech Solutions is here to help.</p>
+            </div>
+        </div>
+
+        <!-- Footer section of the webpage -->
+        <footer>
+            <div class="container">
+                <div class="row mt-5">
+                    <!-- Column for Contact Information -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Contact Information</h5>
+                        <p>
+                            <!-- Font Awesome icons for contact details -->
+                            <i class="fas fa-map-marker-alt"></i> 123 techsolutions blvd, IT, Wonderland<br>
+                            <i class="fas fa-phone"></i> (555) 555-555<br>
+                            <i class="fas fa-envelope"></i> contact@techsolutions.com
+                        </p>
+                    </div>
+    
+                    <!-- Column for social media links with icons -->
+                    <div class="col-md-4 social-icons">
+                        <h5>Follow Us</h5>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+    
+                    <!-- Column for Newsletter Signup form -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Newsletter Signup</h5>
+                        <form>
+                            <div class="mb-3">
+                                <!-- Input for email address -->
+                                <label for="newsletter-email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                            </div>
+                            <!-- Submit button for the form -->
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
     </div>
 </body>
 </html>

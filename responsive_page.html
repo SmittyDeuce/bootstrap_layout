@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
     <title>Service Page</title>
+    <!-- Link to Bootstrap CSS for styling -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Script for Bootstrap functionality (bundle includes Popper) -->
     <script src="js/bootstrap.bundle.js"></script>
 </head>
 <body>
+    <!-- Main container for the content, centered and with margin at the top -->
     <div class="container text-center mt-5">
+        <!-- Header section with a bottom margin -->
         <header class="mb-5">
+            <!-- Main heading for the services page -->
             <h1>Our Services</h1>
         </header>
+        <!-- Row for service sections -->
         <div class="row">
+            <!-- Column for Computer Assembly service -->
             <div class="col-md-4 mb-4">
                 <h2>Computer Assembly</h2>
+                <!-- Image related to Computer Assembly -->
                 <img src="photos/man_with_mb.avif" class="img-thumbnail" alt="man holding a motherboard">
                 <p>Here at Tech Solutions we will build your PC if you come with the parts
                     or we can work with your budget and get the parts for you and assemble it.</p>
             </div>
+            <!-- Column for Home Runs service -->
             <div class="col-md-4 mb-4">
                 <h2>Home Runs</h2>
+                <!-- Image related to Home Runs service -->
                 <img src="photos/network_switch.avif" class="img-thumbnail" alt="back of two network switches with ethernets">
                 <p>Another service that we provide is home run cable runs from modem
                     to wherever in your home or business you may want it, whether that
                     may be server room, smart panel, bedroom, or simply across the room.
                     We do wallfishes as well.</p>
             </div>
+            <!-- Column for Phone Repair service -->
             <div class="col-md-4 mb-4">
                 <h2>Phone Repair</h2>
+                <!-- Image related to Phone Repair -->
                 <img src="photos/broken_phone.avif" class="img-thumbnail" alt="broken iphone">
                 <p>Do you or anyone you know have a broken phone?
                     Bring it down, we'll make it brand new, and we'll
                     even throw in a case or a screen protector.</p>
             </div>
         </div>
+        <!-- Row for Contact Form -->
         <div class="row">
+            <!-- Column for Contact Form, centered and with margin at the bottom -->
             <div class="col-md-6 mb-4 mx-auto">
                 <h2>Contact Form</h2>
                 <p>If you have more inquiries on our services, please leave your name and email below and we'll get to you as soon as possible.</p>
+                <!-- Contact form for user inquiries -->
                 <form>
                     <div class="mb-3">
+                        <!-- Input for the user's name -->
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
                     </div>
                     <div class="mb-3">
+                        <!-- Input for the user's email address -->
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
                     </div>
                     <div class="mb-3">
+                        <!-- Dropdown menu for selecting a service -->
                         <label for="service" class="form-label">Select Service</label>
                         <select class="form-select" id="service">
                             <option selected>Select a service</option>
@@ -58,9 +77,11 @@
                         </select>
                     </div>
                     <div class="mb-3">
+                        <!-- Textarea for the user's message -->
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
                     </div>
+                    <!-- Submit button for the form -->
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

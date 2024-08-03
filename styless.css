@@ -1,0 +1,27 @@
+/* Styles for the header section */
+.header {
+    /* Set the background image for the header */
+    background-image: url('photos/network_switch.avif');
+    /* Ensure the background image covers the entire header area */
+    background-size: cover;
+    /* Center the background image within the header */
+    background-position: center;
+    /* Set the height of the header to the full viewport height */
+    height: 100vh;
+    /* Use flexbox for aligning content */
+    display: flex;
+    /* Center align items vertically within the header */
+    align-items: center;
+    /* Center align items horizontally within the header */
+    justify-content: center;
+    /* Center align text inside the flex container */
+    text-align: center;
+}
+
+/* Styles for the heading inside the header */
+.header h1 {
+    /* Set the text color to white */
+    color: white;
+    /* Remove default margin from the heading */
+    margin: 0;
+}
